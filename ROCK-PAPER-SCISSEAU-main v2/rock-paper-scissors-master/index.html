@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+ 
+</head>
+<body>
+  
+<main>
+<section>
+<div id="Presentation"><h1>ROCK <br> PAPER <br> SCISSORS</h1><div id="score"><h3>score</h3><p id="scorePanel">0</p></div></div>
+<div id="playeArea">
+  <div id="rock" onclick="choiseWeapon(rock)"><img src="images/icon-rock.svg" alt="rock"></div>
+  <div id="paper" onclick="choiseWeapon(paper)"><img src="images/icon-paper.svg" alt="paper"></div>
+  <div id="scissors" onclick="choiseWeapon(scissors)"><img src="images/icon-scissors.svg" alt="scissors"></div>
+</div>
+
+<div id="fightArea">
+  <div id="VictoryJ"></div>
+  <div id="VictoryM"></div>
+  <div id="rockJ"><img src="images/icon-rock.svg" alt="rock"></div>
+  <div id="paperJ"><img src="images/icon-paper.svg" alt="paper"></div>
+  <div id="scissorsJ"><img src="images/icon-scissors.svg" alt="scissors"></div>
+  <div id="rockM"><img src="images/icon-rock.svg" alt="rock"></div>
+  <div id="paperM"><img src="images/icon-paper.svg" alt="paper"></div>
+  <div id="scissorsM"><img src="images/icon-scissors.svg" alt="scissors"></div>
+  
+</div>
+<h2 id="annonce">VICTOIRE</h2>
+<div id="Again" onclick="restart()" >PLAY AGAIN</div>
+<div id="help" onclick="openbtn()"><h1>RULE</h1></div>
+<div id="RulePanel"><div id="l1"><h1>Rule : <h1></h1><div id="close" onclick="closebtn()"><img src="images/icon-close.svg" alt=""></div></div><img src="images/image-rules.svg" alt="rule"></div>
+</section>
+</main>
+<script src="game.js"></script>
+  <link rel="stylesheet" href="style.css">
+</body>
+</html>
